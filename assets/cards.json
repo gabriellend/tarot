@@ -1,0 +1,60 @@
+[{
+    "name": "Fool",
+    "zodiacSign": "Aries",
+    "element": "Air",
+    "uprightMeaning": "The Fool represents someone embarking on a new adventure. Brave. Curious. Playful. The Fool is willing to put it all out there and try something new. If you've ever loaded up your car for a spontaneous road trip, ready to embrace whatever lies ahead, you have felt the thrilling, adventurous energy of the Fool. The Fool card is number 0, which represents nothingness, unlimited potential, or what Zen Buddhism calls \"the beginner's mind.\" This card represents new beginnings, risks, and a leap of faith.",
+    "reversedMeaning": "The Fool becomes hesitant. He pulls back from the edge. Is this wisdom or doubt? Are you staying in your comfort zone out of fear? Or are you simply not ready to move forward? If this card comes up for you in a reading, you might want to examine how fear may be playing a role in your life. The Fool reversed can also represent recklessness, immaturity, and impulse, not looking before leaping.",
+    "isUpright": true,
+    "uprightKeywords": ["new beginning", "innocence"],
+    "reversedKeywords": ["recklessness"],
+    "number": 0,
+    "isMajor": true,
+    "isCourt": false,
+    "planet": "Uranus",
+    "symbols": {
+        "The Cliff": "The Fool is standing awfully close to the edge of the cliff––yikes!––yet he seems confident and joyful. The Fool craves adventure, even a bit of danger, but he knows his limits.",
+        "The Dog": "The Fool has a small dog as a companion. The dog leaps playfully, perhaps mimicking his master's jubilant enery. The journey might be short or long, but the Fool won't be traveling alone.",
+        "A Rose": "In the Tarot world, roses often symbolize freedom––particularly sensual or sexual freedom. The Fool might enjoy some, ahem, liberated \"pleasures\" in the near future",
+        "Boots": "Those boots were made for walking! The Fool is geared up and ready for the journey ahead." 
+    }
+},
+{
+    "name": "Magician",
+    "zodiacSign": null,
+    "element": "Air",
+    "uprightMeaning": "Unlike the carefree Fool, the Magician is ready to get down to business. His tools are laid out before him, and his stance is powerful. With a wand pointed to the heavens and a finger to the earth, this crafty trickster sets his intention and focuses his will on manifesting a goal. Think about the times that you've wanted something so badly, you mustered every ounce of your power to make that happen. The Magician represents that level of willpower. This card also means skill, talent, and having all the tools you need to make epic stuff happen. The power is yours. It's up to you to stand in that power. So mote it be, indeed.",
+    "reversedMeaning": "The Magician lacks the skills and gumption needed to succeed. This could be due to weakness, laziness, or incompetence. The power becomes blocked, and, in some cases, there may be a tendency to blame others for your inability to manifest your goals. The reversed Magician isn't just negative thinking––it can also symbolize an abuse of power. How are you taking responsibility for where you are...or aren't? Empowerment begins within.",
+    "isUpright": true,
+    "uprightKeywords": ["mastery", "craft"],
+    "reversedKeywords": ["block, negativity"],
+    "number": 1,
+    "isMajor": true,
+    "isCourt": null,
+    "planet": "Mercury",
+    "symbols": {
+        "The Infinity Symbol": "Also called a \"lemniscate,\" this represents the endless energy in the universe. Energy is neither good nor bad; it's just available for our use. It's up to you to set the right intention and then take action.",
+        "The Snake Belt": "Snakes symbolize renewal and rebirth. What are you ready to transform?",
+        "A Wand, Cup, Pentacle, and Sword": "Like a chef's mise en place, these are his tools and represent the four elements: fire, water, earth, and air. The Magician has all the resources he needs to succeed. He brings his talent and willpower to the table and bam––magic happens."
+    }
+},
+{
+    "name": "High Priestess",
+    "zodiacSign": null,
+    "element": "Water",
+    "uprightMeaning": "The first female in the deck, the High Priestess moves in mysterious ways. She's got secrets, and she's not sharing them. The only way to find the truth is by going within. It's all about inner power. Unlike the active yang energy of the Magician, the High Priestess is yin––introspective and receptive. She doesn't have to chase answers––they just come to her. She doesn't force things––she simply \"knows.\" This is the time to trust your gut. Keep your mouth shut and your third eye open.",
+    "reversedMeaning": "When the High Priestess shows up reversed in a Tarot reading, she becomes more active and involved with the outer world, and this may cause her to lose sight of her inner guidance. If you've ever ignored the quiet voice within––and later regretted it––that's what this reversal is talkin' about.",
+    "isUpright": true,
+    "uprightKeywords": ["intuition", "allowing"],
+    "reversedKeywords": ["force"],
+    "number": 2,
+    "isMajor": true,
+    "isCourt": null,
+    "planet": "Moon",
+    "symbols": {
+        "The Pillars": "The pillars represent the entrance of Soloman's Temple. Marked with a B for Boaz and a J for Jachin(the names of the two pillars in the temple in Jerusalem), they represent duality and balance.",
+        "The Crescent Moon": "The moon represents intuition, change, and things that are hidden in the dark.",
+        "The Curtain": "What's on the other side of that curtain? The curtain represents the doorway to our subconscious.",
+        "The Pomegranate": "A pomegranate is filled with seeds, a symbol of fertility.",
+        "The Scroll": "Secret, secret, she's got a secret! The scroll symbolizes hidden knowledge. What's on that scroll? That's for her to know and you to find out."
+    }
+}]
