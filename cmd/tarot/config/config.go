@@ -1,6 +1,8 @@
 package config
 
-import "flag"
+import (
+	"flag"
+)
 
 // type Config struct {
 // 	Debug bool
@@ -16,7 +18,7 @@ import "flag"
 // }
 
 const (
-	defaultPort = "8000"
+	defaultPort = "8080"
 	flagPort    = "port"
 	usagePort   = "port to listen and serve on"
 
@@ -30,7 +32,7 @@ const (
 )
 
 type Config struct {
-	Port         string
+	Port         string //Why isn't this type pointer?
 	StaticDir    string
 	TemplatesDir string
 }
@@ -46,8 +48,10 @@ func New() (*Config, error) {
 		)
 	)
 
+	//Why no flag.Parse() here? How are flags useful if no parsing?
+
 	return &Config{
-		Port:         *port,
+		Port:         *port, //Why need to specify a pointer when flag.String returns a pointer?
 		StaticDir:    *staticDir,
 		TemplatesDir: *templatesDir,
 	}, nil

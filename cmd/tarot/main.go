@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 
 	"github.com/gabriellend/tarot/cmd/tarot/config"
@@ -21,14 +22,13 @@ func main() {
 	fmt.Println("starting")
 
 	// Setup the main context.
-	// ctx, cancel := context.WithCancel(context.Background())
+	ctx, cancel := context.WithCancel(context.Background())
 
 	cfg, err := config.New()
 	if err != nil {
 		fmt.Printf("failed to get config: %v\n", err)
 	}
 
-	fmt.Printf("%+v", cfg)
-
-	// server.New()
+	serverDone := make(chan struct{})
+	go serve(ctx, serverDone, cfg)
 }
