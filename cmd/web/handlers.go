@@ -1,6 +1,7 @@
 package main
 
 import (
+	"html/template"
 	"log"
 	"net/http"
 )
@@ -11,7 +12,18 @@ func home(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Write([]byte("Would you like your fortune told?"))
+	ts, err := template.ParseFiles("./ui/html/home.page.tmpl")
+	if err != nil {
+		log.Println(err.Error())
+		http.Error(w, "Internal Server Error", 500)
+		return
+	}
+
+	err = ts.Execute(w, nil)
+	if err != nil {
+		log.Println(err.Error())
+		http.Error(w, "Internal Server Error", 500)
+	}
 }
 
 func displayCards(w http.ResponseWriter, r *http.Request) {
@@ -40,20 +52,4 @@ func displaySwords(w http.ResponseWriter, r *http.Request) {
 
 func displayPentacles(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("The pentacles."))
-}
-
-func main() {
-	mux := http.NewServeMux()
-	mux.HandleFunc("/", home)
-	mux.HandleFunc("/cards", displayCards)
-	mux.HandleFunc("/cards/major", displayMajor)
-	mux.HandleFunc("/cards/minor", displayMinor)
-	mux.HandleFunc("/cards/wands", displayWands)
-	mux.HandleFunc("/cards/cups", displayCups)
-	mux.HandleFunc("/cards/swords", displaySwords)
-	mux.HandleFunc("/cards/pentacles", displayPentacles)
-
-	log.Println("Starting server on port 8000")
-	err := http.ListenAndServe(":8000", mux)
-	log.Fatal(err)
 }
