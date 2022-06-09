@@ -12,7 +12,12 @@ func home(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	ts, err := template.ParseFiles("./ui/html/home.page.tmpl")
+	files := []string{
+		"./ui/html/home.page.tmpl",
+		"./ui/html/base.layout.tmpl",
+	}
+
+	ts, err := template.ParseFiles(files...)
 	if err != nil {
 		log.Println(err.Error())
 		http.Error(w, "Internal Server Error", 500)
@@ -26,30 +31,30 @@ func home(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func displayCards(w http.ResponseWriter, r *http.Request) {
+func showCards(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("The whole deck."))
 }
 
-func displayMajor(w http.ResponseWriter, r *http.Request) {
+func showMajor(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("The major arcana."))
 }
 
-func displayMinor(w http.ResponseWriter, r *http.Request) {
+func showMinor(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("The minor arcana."))
 }
 
-func displayWands(w http.ResponseWriter, r *http.Request) {
+func showWands(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("The wands."))
 }
 
-func displayCups(w http.ResponseWriter, r *http.Request) {
+func showCups(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("The cups."))
 }
 
-func displaySwords(w http.ResponseWriter, r *http.Request) {
+func showSwords(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("The swords."))
 }
 
-func displayPentacles(w http.ResponseWriter, r *http.Request) {
+func showPentacles(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("The pentacles."))
 }
